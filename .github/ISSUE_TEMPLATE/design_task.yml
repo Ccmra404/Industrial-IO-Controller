@@ -1,0 +1,63 @@
+name: 设计/开发任务
+description: 提出硬件设计、固件功能、技术研究或工程改进
+title: "[Task] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: 目标
+      description: 本任务希望解决什么问题或实现什么能力？
+    validations:
+      required: true
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景与依据
+      description: 描述应用场景、现状、约束和参考资料。
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 影响范围
+      options:
+        - 产品需求/系统方案
+        - 硬件原理图
+        - PCB/结构
+        - 电源与保护
+        - 固件
+        - 通信协议
+        - 测试验证
+        - 文档/工具
+        - 多个模块
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: 具体需求与约束
+      description: 尽可能提供可量化的参数、边界条件和禁止事项。
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收标准
+      description: 使用可检查、可测试的条件描述完成标准。
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: 风险与验证计划
+      description: 说明潜在风险、需要的仪器/样机和验证方法。
+    validations:
+      required: false
+  - type: textarea
+    id: references
+    attributes:
+      label: 参考资料
+      description: 数据手册、标准、链接或相关 Issue。
+    validations:
+      required: false
