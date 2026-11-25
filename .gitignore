@@ -1,0 +1,48 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor and temporary files
+*.swp
+*.swo
+*~
+*.tmp
+*.bak
+*.autosave
+*.lck
+
+# EDA temporary/cache/backup directories only.
+# Do not ignore native EDA project files or design/manufacturing exports by extension.
+**/backup/
+**/backups/
+**/cache/
+**/temp/
+**/tmp/
+
+# Firmware build output directories
+/firmware/build/
+/firmware/out/
+/firmware/Debug/
+/firmware/Release/
+/firmware/Objects/
+/firmware/Listings/
+
+# Common compiler intermediates
+*.o
+*.a
+*.d
+*.elf
+*.map
+*.lst
+
+# Python tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
