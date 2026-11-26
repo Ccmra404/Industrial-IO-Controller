@@ -12,13 +12,26 @@ Desktop.ini
 *.autosave
 *.lck
 
-# EDA temporary/cache/backup directories only.
-# Do not ignore native EDA project files or design/manufacturing exports by extension.
+# EDA native project files, netlists, schematic renders, manufacturing packages, and local backups
+# (Keep docs/specifications/, ROADMAP.md, and README.md files tracked)
 **/backup/
 **/backups/
 **/cache/
 **/temp/
 **/tmp/
+*.eprj*
+*.epro*
+*.esch*
+*.epcb*
+*.pcb*
+*.sch*
+*.gbr
+*.drl
+*.zip
+/hardware/eda/rs485-io-board/schematic-render/
+/hardware/eda/rs485-io-board/网表-*
+/hardware/manufacturing/*
+!/hardware/manufacturing/README.md
 
 # Firmware build output directories
 /firmware/build/
